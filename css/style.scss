@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import 'card';
+// @import 'mobile';
+// @import 'include-media';
+//Colors primary
+$cyanGreen: hsl(179, 62%, 43%);
+$brightYellow: hsl(71, 73%, 54%);
+
+// Colors neutral
+$lightGray: hsl(204, 43%, 93%);
+$grayishBlue: hsl(218, 22%, 67%);
+
+// Green colors
+$greenTwo: hsl(179, 47%, 52%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+.main {
+    width: 100vw; 
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $lightGray;
+}
+

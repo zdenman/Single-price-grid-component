@@ -1,0 +1,127 @@
+
+.card{
+    background-color: white;
+    max-width: 40rem;
+    border-radius: 1rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    .join{
+        padding: 3rem;
+
+        .headline {
+            color: hsl(179, 62%, 43%);
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+        .subtitle{
+            color: hsl(71, 73%, 54%);
+            padding-bottom: .8rem;
+        }
+        p {
+            line-height: 1.5rem;
+            color: hsl(218, 22%, 67%);
+        }
+    }
+
+    .green{
+        display: flex;
+
+
+        .monthly{
+            width: 50%;
+            background-color:hsl(179, 62%, 43%);
+            padding: 2.5rem;
+            border-radius: 0 0 0 1rem;
+
+            .subscription{
+                color: white;
+                font-weight: 400;
+                padding-bottom: 1rem;
+            }
+            .perm{
+                color:hsl(204, 43%, 93%);
+                font-weight: 400;
+                padding-bottom: 1rem;
+            
+                .price{
+                    color: white;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    padding-right: .8rem;
+                }
+            } 
+            p{
+                color: white;
+            }
+            button{
+                border: none;
+                padding: 1rem;
+                width: 100%;
+                border-radius: .3rem;
+                margin-top: 2rem;
+                background-color: hsl(71, 73%, 54%); 
+                color: white;
+                font-size: 1rem;
+                font-weight: 700;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            }
+            
+        }
+        .why_us{
+            width: 50%;
+            background-color:hsl(179, 47%, 52%);
+            padding: 2.5rem;
+            border-radius: 0 0 1rem 0;
+
+            .subscription{
+                color: white;
+                padding-bottom: 1rem;
+
+            }
+            p{
+                color: hsl(204, 43%, 93%);
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.4rem;
+                text-align: left;
+            }
+        }
+    }
+}
+@media all and (max-width: 375px){
+        .card{
+            border-radius: .5rem;
+    
+        .join{
+            width: 18rem;
+
+            .headline{
+                font-size: 1.1rem;
+            }
+            .subtitle{
+                font-size: .8rem;
+            }
+            p{
+                font-size: .8rem;
+            }
+            
+        }
+        .green{
+            flex-direction: column;
+            max-width: 18rem;
+
+            .monthly{
+                width: 100%;
+                border-radius: 0 0 0 0;
+                p{
+                    font-size: .8rem;
+                }
+            }
+            .why_us{
+                width:100%;
+                border-radius: 0 0 .5rem .5rem;
+            }
+        }
+    }
+
+}
